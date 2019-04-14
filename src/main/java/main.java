@@ -5,7 +5,7 @@ public class main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context=
                 new AnnotationConfigApplicationContext(
-                        "ro.ubb.springjpa.config"
+                        "config"
                 );
 
         Console console=context.getBean(Console.class);
