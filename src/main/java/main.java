@@ -10,7 +10,5 @@ public class main {
 
         Console console=context.getBean(Console.class);
         console.miniRunConsole();
-
-        System.out.println("hello");
     }
 }

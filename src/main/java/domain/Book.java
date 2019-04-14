@@ -1,5 +1,8 @@
 package domain;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Book extends BaseEntity<Long>{
     private String serialNumber;
     private String name;

@@ -3,7 +3,6 @@ package service;
 import domain.Book;
 
 import java.util.List;
-import java.util.Set;
 
 public interface IBookService {
     List<Book> getAllBooks();

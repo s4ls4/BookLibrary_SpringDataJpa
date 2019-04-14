@@ -18,9 +18,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
-/**
- * Created by radu.
- */
 
 @Configuration
 @EnableJpaRepositories({"repository"})
@@ -40,11 +37,6 @@ public class JPAConfig {
     @Value("${db.generateDDL}")
     private Boolean generateDDL;
 
-    /**
-     * http://www.baeldung.com/hikaricp
-     *
-     * @return
-     */
     @Bean
     public DataSource dataSource() {
         HikariConfig config = new HikariConfig();
