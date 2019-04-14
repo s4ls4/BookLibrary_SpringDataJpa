@@ -9,7 +9,7 @@ public class main {
                 );
 
         Console console=context.getBean(Console.class);
-        console.runConsole();
+        console.miniRunConsole();
 
         System.out.println("hello");
     }

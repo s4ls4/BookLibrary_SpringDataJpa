@@ -3,6 +3,8 @@ import domain.Book;
 import domain.Client;
 import domain.Purchase;
 import domain.validators.ValidatorException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import service.*;
 
 import java.io.BufferedReader;
@@ -16,8 +18,10 @@ import java.util.stream.Stream;
 /**
  * Author: Stefi Nicoara
  */
+@Component
 public class Console {
 
+    @Autowired
     private DBBookService DBBookService;
 
     public Console(DBBookService DBBookService) {
