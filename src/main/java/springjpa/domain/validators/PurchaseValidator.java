@@ -1,9 +1,7 @@
-package domain.validators;
+package springjpa.domain.validators;
 
-import domain.Book;
-import domain.Purchase;
-
-import java.util.Arrays;
+import springjpa.domain.Book;
+import springjpa.domain.Purchase;
 
 public class PurchaseValidator implements Validator<Purchase> {
     @Override

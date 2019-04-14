@@ -1,7 +1,7 @@
-package domain.validators;
+package springjpa.domain.validators;
 
-import domain.Book;
-import domain.Client;
+import springjpa.domain.Book;
+import springjpa.domain.Client;
 
 import java.util.function.Predicate;
 

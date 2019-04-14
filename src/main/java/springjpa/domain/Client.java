@@ -1,4 +1,4 @@
-package domain;
+package springjpa.domain;
 
 
 public class Client extends BaseEntity<Long>{

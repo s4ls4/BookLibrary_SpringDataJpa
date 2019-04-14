@@ -1,6 +1,6 @@
-package repository;
+package springjpa.repository;
 
-import domain.BaseEntity;
+import springjpa.domain.BaseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 

@@ -1,4 +1,4 @@
-package config;
+package springjpa.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 
 
 @Configuration
-@EnableJpaRepositories({"repository"})
+@EnableJpaRepositories({"springjpa.repository"})
 @EnableTransactionManagement
 //@EnableCaching
 public class JPAConfig {
@@ -59,7 +59,7 @@ public class JPAConfig {
 
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(vendorAdapter);
-        factory.setPackagesToScan("domain");
+        factory.setPackagesToScan("springjpa/domain");
         factory.setDataSource(dataSource());
         factory.afterPropertiesSet();
         return factory.getObject();

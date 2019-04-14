@@ -1,6 +1,6 @@
-package service;
+package springjpa.service;
 
-import domain.Book;
+import springjpa.domain.Book;
 
 import java.util.List;
 

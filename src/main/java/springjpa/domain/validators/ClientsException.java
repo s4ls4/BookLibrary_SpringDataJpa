@@ -1,4 +1,4 @@
-package domain.validators;
+package springjpa.domain.validators;
 
 public class ClientsException extends RuntimeException{
 

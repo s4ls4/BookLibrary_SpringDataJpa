@@ -1,6 +1,6 @@
-package repository;
+package springjpa.repository;
 
-import domain.Book;
+import springjpa.domain.Book;
 
 public interface BookRepository extends BaseRepository<Book, Long> {
 }

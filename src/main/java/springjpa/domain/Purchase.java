@@ -1,4 +1,4 @@
-package domain;
+package springjpa.domain;
 
 public class Purchase extends BaseEntity<Long> {
     private Long idClient;

@@ -1,7 +1,6 @@
-package domain;
+package springjpa.domain;
 
 
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;

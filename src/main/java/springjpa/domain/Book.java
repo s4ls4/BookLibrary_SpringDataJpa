@@ -1,4 +1,4 @@
-package domain;
+package springjpa.domain;
 
 import javax.persistence.Entity;
 

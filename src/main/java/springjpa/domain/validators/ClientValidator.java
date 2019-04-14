@@ -1,6 +1,6 @@
-package domain.validators;
+package springjpa.domain.validators;
 
-import domain.Client;
+import springjpa.domain.Client;
 
 import java.util.Arrays;
 
