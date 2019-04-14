@@ -11,6 +11,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.stream.Stream;
@@ -22,9 +23,9 @@ import java.util.stream.Stream;
 public class Console {
 
     @Autowired
-    private DBBookService DBBookService;
+    private BookService DBBookService;
 
-    public Console(DBBookService DBBookService) {
+    public Console(BookService DBBookService) {
 
 
         this.DBBookService = DBBookService;
@@ -310,7 +311,7 @@ public class Console {
 //    }
 
     private void printAllBooksDB() {
-        Set<Book> books = this.DBBookService.getAllBooks();
+        List<Book> books = this.DBBookService.getAllBooks();
         books.forEach((i) -> System.out.println((i.toString())));
     }
 
@@ -377,7 +378,7 @@ public class Console {
 
         try {
             Book book = this.readBook();
-            this.DBBookService.addBook(book);
+            this.DBBookService.saveBook(book);
         } catch (Exception e) {
             System.out.println(e.toString());
         }
@@ -457,7 +458,7 @@ public class Console {
 
         try {
             Long id = Long.valueOf(bufferRead.readLine());
-            this.DBBookService.deleteBook(id);
+            this.DBBookService.delete(id);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -519,7 +520,7 @@ public class Console {
 
         try {
             Book book = this.readBook();
-            this.DBBookService.updateBook(book);
+            this.DBBookService.update(book);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

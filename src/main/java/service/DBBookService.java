@@ -3,6 +3,10 @@ package service;
 
 import domain.Book;
 import domain.validators.ValidatorException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import repository.paging.Page;
 import repository.paging.PageRequest;
 import repository.paging.Pageable;
@@ -15,7 +19,11 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+@Service
 public class DBBookService {
+    private static final Logger log = LoggerFactory.getLogger(DBBookService.class);
+
+    @Autowired
     private PagingRepository<Long, Book> dbRepo;
 
     //COPY THIS TO THE OTHER SERVICES

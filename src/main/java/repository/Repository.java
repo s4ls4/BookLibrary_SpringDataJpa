@@ -3,10 +3,12 @@ package repository;
 
 import domain.BaseEntity;
 import domain.validators.ValidatorException;
+import org.springframework.data.repository.NoRepositoryBean;
 
 import java.io.Serializable;
 import java.util.Optional;
 
+@NoRepositoryBean
 public interface Repository<ID extends Serializable, T extends BaseEntity<ID>> {
     /**
      * Find the entity with the given id.

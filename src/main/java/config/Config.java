@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan({"ro.ubb.springjpa.repository", "ro.ubb.springjpa.service", "ro.ubb.springjpa.ui"})
+@ComponentScan({"repository", "service", "ui"})
 public class Config {
 
 

@@ -23,7 +23,7 @@ import javax.sql.DataSource;
  */
 
 @Configuration
-@EnableJpaRepositories({"ro.ubb.springjpa.repository"})
+@EnableJpaRepositories({"repository"})
 @EnableTransactionManagement
 //@EnableCaching
 public class JPAConfig {
@@ -67,7 +67,7 @@ public class JPAConfig {
 
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(vendorAdapter);
-        factory.setPackagesToScan("ro.ubb.springjpa.model");
+        factory.setPackagesToScan("domain");
         factory.setDataSource(dataSource());
         factory.afterPropertiesSet();
         return factory.getObject();
