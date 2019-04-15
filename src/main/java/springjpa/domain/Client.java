@@ -1,6 +1,9 @@
 package springjpa.domain;
 
 
+import javax.persistence.Entity;
+
+@Entity
 public class Client extends BaseEntity<Long>{
     private String serialNumber;
     private String name;
