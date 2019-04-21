@@ -23,6 +23,8 @@ public class ClientApp {
                 .author("sfsd")
                 .price(9)
                 .build();
+
+        newBook.setId((long) 20);
         BookDto savedBook = restTemplate.postForObject(
                 "http://localhost:8080/api/books",
                 newBook,
