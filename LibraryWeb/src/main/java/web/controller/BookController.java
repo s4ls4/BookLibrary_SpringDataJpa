@@ -5,9 +5,9 @@ import core.service.BookService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import web.converter.BookConverter;
 import web.dto.BookDto;
 import web.dto.BooksDto;
@@ -34,45 +34,45 @@ public class BookController {
         Set<BookDto> dtos = bookConverter.convertModelsToDtos(books);
         BooksDto result = new BooksDto(dtos);
 
-        log.trace("getAllStudents: result={}", result);
+        log.trace("getAllBooks: result={}", result);
 
         return result;
     }
 
-    @RequestMapping(value = "/students", method = RequestMethod.POST)
-    StudentDto saveStudent(@RequestBody StudentDto dto) {
-        log.trace("saveStudent: dto={}", dto);
+    @RequestMapping(value = "/books", method = RequestMethod.POST)
+    BookDto saveBook(@RequestBody BookDto dto) {
+        log.trace("saveBook: dto={}", dto);
 
-        Student saved = this.studentService.saveStudent(
-                studentConverter.convertDtoToModel(dto)
+        Book saved = this.bookService.saveBook(
+                bookConverter.convertDtoToModel(dto)
         );
-        StudentDto result = studentConverter.convertModelToDto(saved);
+        BookDto result = bookConverter.convertModelToDto(saved);
 
-        log.trace("saveStudent: result={}", result);
+        log.trace("saveBook: result={}", result);
 
         return result;
     }
 
-    @RequestMapping(value = "/students/{id}", method = RequestMethod.PUT)
-    StudentDto updateStudent(@PathVariable Long id,
-                             @RequestBody StudentDto dto) {
-        log.trace("updateStudent: id={},dto={}", id, dto);
+    @RequestMapping(value = "/books/{id}", method = RequestMethod.PUT)
+    BookDto updateBook(@PathVariable Long id,
+                             @RequestBody BookDto dto) {
+        log.trace("updateBook: id={},dto={}", id, dto);
 
-        Student update = studentService.updateStudent(
+        Book update = bookService.updateBook(
                 id,
-                studentConverter.convertDtoToModel(dto));
-        StudentDto result = studentConverter.convertModelToDto(update);
+                bookConverter.convertDtoToModel(dto));
+        BookDto result = bookConverter.convertModelToDto(update);
 
         return result;
     }
 
-    @RequestMapping(value = "/students/{id}", method = RequestMethod.DELETE)
-    ResponseEntity<?> deleteStudent(@PathVariable Long id) {
-        log.trace("deleteStudent: id={}", id);
+    @RequestMapping(value = "/books/{id}", method = RequestMethod.DELETE)
+    ResponseEntity<?> deleteBook(@PathVariable Long id) {
+        log.trace("deleteBook: id={}", id);
 
-        studentService.deleteStudent(id);
+        bookService.deleteBook(id);
 
-        log.trace("deleteStudent --- method finished");
+        log.trace("deleteBook --- method finished");
 
         return new ResponseEntity<>(HttpStatus.OK);
     }

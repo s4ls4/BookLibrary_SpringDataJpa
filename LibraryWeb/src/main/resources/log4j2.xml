@@ -34,7 +34,7 @@
         <Logger name="org.springframework.web" level="WARN"/>
         <Logger name="org.springframework.http.converter.json" level="WARN"/>
         <Logger name="com.fasterxml.jackson.databind" level="WARN"/>
-        <Logger name="springjpa" level="TRACE"/>
+        <Logger name="salsa" level="TRACE"/>
 
         <!-- ROOT -->
         <Root level="WARN">

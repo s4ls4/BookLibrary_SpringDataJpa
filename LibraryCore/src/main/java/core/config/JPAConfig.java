@@ -21,7 +21,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 @Configuration
-@EnableJpaRepositories({"core.core.repository"})
+@EnableJpaRepositories({"core.repository"})
 @EnableTransactionManagement
 @EnableCaching
 public class JPAConfig {
@@ -66,7 +66,7 @@ public class JPAConfig {
 
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(vendorAdapter);
-        factory.setPackagesToScan("ro.ubb.catalog.core.core.model");
+        factory.setPackagesToScan("core.model");
         factory.setDataSource(dataSource());
         factory.afterPropertiesSet();
         return factory.getObject();

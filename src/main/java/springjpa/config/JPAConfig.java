@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 
 
 @Configuration
-@EnableJpaRepositories({"springjpa.core.repository"})
+@EnableJpaRepositories({"core.repository"})
 @EnableTransactionManagement
 //@EnableCaching
 public class JPAConfig {
