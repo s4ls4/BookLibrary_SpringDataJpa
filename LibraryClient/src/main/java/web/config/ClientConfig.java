@@ -1,4 +1,4 @@
-package config;
+package web.config;
 
 @Configuration
 public class ClientConfig {

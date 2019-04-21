@@ -1,3 +1,5 @@
 rootProject.name = 'salsa'
-
+include 'LibraryWeb'
+include 'LibraryCore'
+include 'LibraryClient'
 

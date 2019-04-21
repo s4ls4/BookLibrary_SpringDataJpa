@@ -1,4 +1,4 @@
-package config;
+package core.config;
 
 
 import com.github.benmanes.caffeine.cache.Caffeine;

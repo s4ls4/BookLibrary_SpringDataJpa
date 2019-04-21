@@ -1,6 +1,6 @@
-package repository;
+package core.repository;
 
-import model.Client;
+import core.model.Client;
 
 public interface ClientRepository extends BaseRepository<Client, Long> {
 }

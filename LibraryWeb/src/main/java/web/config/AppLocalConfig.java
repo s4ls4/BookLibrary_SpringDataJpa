@@ -1,4 +1,4 @@
-package config;
+package web.config;
 
 import core.config.JPAConfig;
 import org.springframework.context.annotation.*;

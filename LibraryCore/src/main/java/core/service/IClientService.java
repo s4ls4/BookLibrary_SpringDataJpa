@@ -1,6 +1,6 @@
-package service;
+package core.service;
 
-import model.Client;
+import core.model.Client;
 
 import java.util.List;
 

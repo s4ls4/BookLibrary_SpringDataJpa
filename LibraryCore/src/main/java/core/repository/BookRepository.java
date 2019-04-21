@@ -1,6 +1,6 @@
-package repository;
+package core.repository;
 
-import model.Book;
+import core.model.Book;
 
 public interface BookRepository extends BaseRepository<Book, Long> {
 }

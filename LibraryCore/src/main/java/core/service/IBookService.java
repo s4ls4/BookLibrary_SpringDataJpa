@@ -1,6 +1,6 @@
-package service;
+package core.service;
 
-import model.Book;
+import core.model.Book;
 
 import java.util.List;
 

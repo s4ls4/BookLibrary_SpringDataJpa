@@ -1,6 +1,6 @@
-package repository;
+package core.repository;
 
-import model.BaseEntity;
+import core.model.BaseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.io.Serializable;
