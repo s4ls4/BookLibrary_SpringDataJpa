@@ -9,7 +9,6 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 @MappedSuperclass
-@NoArgsConstructor
 @Data
 public class BaseEntity<ID> implements Serializable {
     @Id
