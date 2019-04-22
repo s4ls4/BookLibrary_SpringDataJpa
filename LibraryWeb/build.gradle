@@ -34,4 +34,8 @@ dependencies {
 //    compile group: 'javax.servlet', name: 'javax.servlet-api', version: "$javaxServeletApiVersion"
     // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
     compile group: 'javax.servlet', name: 'javax.servlet-api', version:"$javaxServeletApiVersion"
+
+    compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: "$log4jVersion"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: "$log4jVersion"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-1.2-api', version: "$log4jVersion"
 }

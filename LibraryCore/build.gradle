@@ -27,6 +27,11 @@ dependencies {
 
     compile group: 'javax.xml.bind', name: 'jaxb-api', version: "$jaxbapiVersion"
 
+<<<<<<< HEAD
+    compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: "$log4jVersion"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: "$log4jVersion"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-1.2-api', version: "$log4jVersion"
+=======
     compile group: 'org.slf4j', name: 'slf4j-api', version: "$slf4jVersion"
     testCompile group: 'org.slf4j', name: 'slf4j-simple', version: "$slf4jVersion"
 
@@ -36,5 +41,6 @@ dependencies {
 
     //lombok
     compile group: 'org.projectlombok', name: 'lombok', version: "$lombokVersion"
+>>>>>>> 2d76eb1a0952dabaffcc74d09d3bbf4450b02330
 }
 

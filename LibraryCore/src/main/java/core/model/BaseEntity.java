@@ -10,10 +10,9 @@ import java.io.Serializable;
 
 @MappedSuperclass
 @Data
-public class BaseEntity<ID> implements Serializable {
+public abstract class BaseEntity<ID> implements Serializable {
     @Id
     @GeneratedValue
     private ID id;
-
 
 }

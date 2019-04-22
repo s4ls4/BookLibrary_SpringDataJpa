@@ -48,6 +48,6 @@ plugins {
 
         //lombok
         compile group: 'org.projectlombok', name: 'lombok', version: "$lombokVersion"
-        
+
     }
 
