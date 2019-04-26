@@ -124,7 +124,7 @@ public class Console {
     private void printAllBooks() {
 
         BooksDto booksDto = restTemplate.getForObject("http://localhost:8080/api/books", BooksDto.class);
-        System.out.println(booksDto);
+        booksDto.getBooks().forEach((i) -> System.out.println((i.toString())));
     }
 
     private void updateBook() {

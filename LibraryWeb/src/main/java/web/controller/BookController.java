@@ -2,6 +2,7 @@ package web.controller;
 
 import core.model.Book;
 import core.service.BookService;
+import core.service.IBookService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class BookController {
             LoggerFactory.getLogger(BookController.class);
 
     @Autowired
-    private BookService bookService;
+    private IBookService bookService;
 
     @Autowired
     private BookConverter bookConverter;
