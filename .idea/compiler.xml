@@ -4,5 +4,15 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="salsa.LibraryClient.main" target="1.8" />
+      <module name="salsa.LibraryClient.test" target="1.8" />
+      <module name="salsa.LibraryCore.main" target="1.8" />
+      <module name="salsa.LibraryCore.test" target="1.8" />
+      <module name="salsa.LibraryWeb.main" target="1.8" />
+      <module name="salsa.LibraryWeb.test" target="1.8" />
+      <module name="salsa.salsa.main" target="1.8" />
+      <module name="salsa.salsa.test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

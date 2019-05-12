@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gradle/4.10/vcsMetadata-1/
+.idea/modules/
+LibraryClient/out/production/classes/generated/
+LibraryClient/src/
+LibraryCore/out/production/classes/generated/
+LibraryCore/src/main/resources/
+LibraryCore/src/test/
+LibraryWeb/out/production/classes/generated/
+LibraryWeb/src/test/
+out/production/classes/generated/
+out/production/resources/
+src/
