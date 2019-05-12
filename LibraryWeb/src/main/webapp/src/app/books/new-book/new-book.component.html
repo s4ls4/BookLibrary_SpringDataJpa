@@ -1,0 +1,31 @@
+<form>
+  <br>
+  <br>
+  <table *ngIf="book">
+    <tr>
+      <td><label>ID {{book.id}}</label></td>
+      <td><input [(ngModel)]="book.id" name="id" placeholder="id" /></td>
+    </tr>
+    <tr>
+      <td><label>SerialNumber {{book.serialNumber}}</label></td>
+      <td><input [(ngModel)]="book.serialNumber" name="serialNumber" placeholder="serialNumber" /></td>
+    </tr>
+    <tr>
+      <td><label>Name {{book.name}}</label></td>
+      <td><input [(ngModel)]="book.name" name="name" placeholder="name" /></td>
+    </tr>
+    <tr>
+      <td><label>Author {{book.author}}</label></td>
+      <td><input [(ngModel)]="book.author" name="author" placeholder="author" /></td>
+    </tr>
+    <tr>
+      <td><label>Price {{book.price}}</label></td>
+      <td><input [(ngModel)]="book.price" name="price" placeholder="price" /></td>
+    </tr>
+  </table>
+  <button (click)="buttonClicked()">Add the new Book!</button>
+  <br>
+  <p>{{str}}</p>
+
+
+</form>
