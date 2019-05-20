@@ -17,6 +17,7 @@ public abstract class BaseConverter<Model extends BaseEntity<Long>, Dto extends 
                 .collect(Collectors.toSet());
     }
 
+
     public Set<Long> convertDTOsToIDs(Set<Dto> dtos) {
         return dtos.stream()
                 .map(dto -> dto.getId())

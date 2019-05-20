@@ -11,4 +11,8 @@ import java.io.Serializable;
 @ToString
 public class BaseDto implements Serializable {
     private Long id;
+
+    public Long getId() {
+        return id;
+    }
 }

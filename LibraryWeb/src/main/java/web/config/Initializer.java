@@ -14,8 +14,8 @@ public class Initializer implements WebApplicationInitializer {
             throws ServletException {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
 
-        context.scan("web.config");
-
+        context.scan("web");
+        System.out.println("gfdghgfdgsf");
         ServletRegistration.Dynamic dispatcher = container.addServlet("dispatcher", new DispatcherServlet(context));
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/api/*");
